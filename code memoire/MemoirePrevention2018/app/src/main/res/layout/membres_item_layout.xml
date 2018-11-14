@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="9dp"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/membre_list_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/send_alerte"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:civ_border_width="10dp"
+            app:civ_border_color="#05df29"
+            android:id="@+id/img_on"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="46dp"
+            android:layout_marginLeft="-13dp"
+            android:layout_toRightOf="@id/membre_list_image"
+            android:layout_toEndOf="@id/membre_list_image"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:civ_border_width="10dp"
+            app:civ_border_color="#bfbfbf"
+            android:id="@+id/img_off"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="46dp"
+            android:layout_marginLeft="-13dp"
+            android:layout_toRightOf="@id/membre_list_image"
+            android:layout_toEndOf="@id/membre_list_image"
+
+            tools:ignore="ObsoleteLayoutParam" />
+
+
+        <TextView
+            android:id="@+id/membre_list_call"
+            style="@style/font_text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="telephone"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/item_divider"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="80dp"
+        android:layout_height="1dp"
+        android:layout_width="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/membre_list_name"
+        style="@style/font_text_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="25dp"
+        android:text="username"
+        android:textColor="@color/colorAccentDark" />
+
+
+</RelativeLayout>

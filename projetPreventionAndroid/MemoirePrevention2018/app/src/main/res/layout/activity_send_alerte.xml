@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.Transparent"
+    android:layout_gravity="bottom"
+    android:background="@color/colorTransparent"
+    tools:context=".activities.SendAlerteActivity">
+
+    <LinearLayout
+
+        android:background="@drawable/background_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/iv_description_send_alerte"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background_image_alerte_description"
+            android:src="@drawable/agresion_couteau"/>
+
+
+
+        <Spinner
+            android:id="@+id/spinner_type_of_send_alerte"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/et_description_send_alerte"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            style="@style/font_text_bold"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Description alerte"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_input"
+            android:inputType="textMultiLine" />
+
+       <Button
+           android:id="@+id/btn_send_alerte"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:text="Envoyer"
+           style="@style/font_text_bold"
+           android:textColor="#a30707"
+           android:background="@drawable/background_btn"
+           android:src="@drawable/attention"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fl_take_a_picture"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="140dp"
+
+        app:srcCompat="@drawable/ic_take_a_picture" />
+
+</FrameLayout>
